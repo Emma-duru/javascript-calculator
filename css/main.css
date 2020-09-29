@@ -1,0 +1,58 @@
+body {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calc-parent {
+    width: 500px;
+    height: 250px;
+    margin: auto;
+}
+
+.calc-display {
+    background-color: grey;
+    color: white;
+    font-size: 2.5em;
+    padding: 10px 5px;
+    height: 25%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.calc-btn {
+    padding: 32px;
+    background-color: silver;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calc-btn:hover {
+    background-color: orange;
+}
+
+.calc-operator {
+    background-color: orange;
+}
+
+.calc-clear, .calc-zero {
+    grid-column: 1 / span 2;
+}
+
+.calc-zero {
+    border-radius: 0 0 0 10px;
+}
+
+.calc-equals {
+    border-radius: 0 0 10px 0;
+}
